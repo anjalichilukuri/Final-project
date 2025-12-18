@@ -1,107 +1,115 @@
-# Solar Power Prediction using Linear Regression
+Solar Power Prediction using Linear Regression
 
-**Solar Power Prediction using Linear Regression**
+This project predicts solar power generation (kW) using a Linear Regression machine learning model.
+It was developed as part of my internship:
 
-This project predicts **solar power generation (kW)** using a **Linear Regression** machine learning model.
-It was developed and submitted as part of my internship:
+AI & Data Analytics Intern | AICTE Green Skills
 
-**AI & Data Analytics Intern | AICTE Green Skills**
+PROJECT OVERVIEW
 
----
+Solar power prediction helps in effective energy planning and grid management.
+This project applies supervised machine learning to predict solar power output using weather and solar-related parameters.
 
-**Project Overview**
+PROJECT WORKFLOW
 
-Solar power prediction helps in better energy planning and grid management. In this project, a supervised machine learning approach is used to predict solar power output based on weather and solar-related parameters.
+Data loading and inspection
 
-**Project Workflow**
+Exploratory Data Analysis (EDA)
 
-* Data loading and inspection
-* Exploratory Data Analysis (EDA)
-* Correlation and outlier analysis
-* Feature scaling
-* Model training using Linear Regression
-* Model evaluation using error metrics
+Correlation and outlier analysis
 
----
+Feature scaling
 
-**Dataset Information**
+Model training using Linear Regression
 
-* **Total Records:** 4213
-* **Total Features:** 21
-* **Target Variable:** generated_power_kw
+Model evaluation using error metrics
 
-**Key Input Features**
+DATASET INFORMATION
 
-* Temperature (2m above ground)
-* Relative humidity
-* Mean sea level pressure
-* Cloud cover (low, medium, high)
-* Shortwave radiation
-* Wind speed and direction
-* Solar geometry parameters (zenith, azimuth, angle of incidence)
+Total Records: 4213
 
-**Dataset Quality**
+Total Features: 21
 
-* No missing values
-* No duplicate records
+Target Variable: generated_power_kw
 
----
+KEY INPUT FEATURES
 
-**Exploratory Data Analysis (EDA)**
+Temperature (2m above ground)
 
-The following EDA techniques were applied:
+Relative humidity
 
-* Histogram analysis for data distribution
-* Scatter plots between features and target variable
-* Correlation matrix and heatmap
-* Box plots for outlier detection
+Mean sea level pressure
 
-**Observations**
+Cloud cover (low, medium, high)
 
-* Solar power strongly depends on shortwave radiation
-* Zenith angle and angle of incidence significantly affect power generation
-* High cloud cover and humidity reduce solar power output
+Shortwave radiation
 
----
+Wind speed and direction
 
-**Machine Learning Model**
+Solar geometry parameters (zenith, azimuth, angle of incidence)
 
-**Model Used**
+DATASET QUALITY
 
-* Linear Regression (scikit-learn)
+No missing values
 
-**Data Preprocessing**
+No duplicate records
 
-* Feature and target split
-* Train-test split (80% training, 20% testing)
-* Feature scaling using StandardScaler
+EXPLORATORY DATA ANALYSIS (EDA)
 
-**Libraries Used**
+The following techniques were applied:
 
-* pandas
-* numpy
-* matplotlib
-* seaborn
-* scikit-learn
+Histograms for feature distribution
 
----
+Scatter plots between features and target variable
 
-**Model Evaluation**
+Correlation matrix and heatmap
 
-The model performance was evaluated using **Mean Absolute Error (MAE)**.
+Box plots for outlier detection
 
-| Dataset      | MAE (kW) |
-| ------------ | -------- |
-| Training Set | ~392.42  |
-| Test Set     | ~391.79  |
+KEY OBSERVATIONS
 
-**Interpretation**
+Solar power is strongly influenced by shortwave radiation
 
-* Similar training and testing errors indicate no overfitting
-* Linear Regression provides a strong baseline prediction model
+Zenith angle and angle of incidence significantly affect power generation
 
----
+Higher cloud cover and humidity reduce solar power output
 
-**Results and Conclusion**
+MACHINE LEARNING MODEL
 
-The Linear Regression model successfully captures the relationship between environmental factors and solar power generation. While the performance is reasonable, prediction accuracy can be improved using advanced mod
+Algorithm: Linear Regression (scikit-learn)
+
+DATA PREPROCESSING
+
+Feature–target split
+
+Train-test split (80% training, 20% testing)
+
+Feature scaling using StandardScaler
+
+LIBRARIES USED
+
+pandas
+
+numpy
+
+matplotlib
+
+scikit-learn
+
+MODEL EVALUATION
+
+Model performance was evaluated using Mean Absolute Error (MAE).
+
+Dataset	MAE (kW)
+Training Set	~392.42
+Test Set	~391.79
+INTERPRETATION
+
+Similar training and testing errors indicate good generalization
+
+Linear Regression serves as a strong baseline model
+
+RESULTS AND CONCLUSION
+
+This project demonstrates the application of machine learning techniques to real-world energy prediction problems.
+Future improvements can include advanced regression models to enhance prediction accuracy.
